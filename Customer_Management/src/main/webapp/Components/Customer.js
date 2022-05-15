@@ -69,11 +69,7 @@ $(document).on("click", ".btnRemove", function(event)
 // CLIENT-MODEL================================================================
 function validateCustomerForm() 
 { 
-// CustomerId
-if ($("#CustomerId").val().trim() == "") 
- { 
- return "Insert CustomerId."; 
- } 
+
 // CustomerName Name
 if ($("#CustomerName").val().trim() == "") 
  { 
@@ -95,7 +91,7 @@ if ($("#Address").val().trim() == "")
  return "Insert AccNumber."; 
  }
 // is numerical value
-var telephone = $("#Mobile_No").val().trim(); 
+var telephone = $("#MobileNo").val().trim(); 
 if (!$.isNumeric(telephone)) 
  { 
  return "Insert a numerical value for telephone number."; 
